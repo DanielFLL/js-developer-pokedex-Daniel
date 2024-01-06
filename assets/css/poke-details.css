@@ -1,0 +1,213 @@
+.cardContent {
+    padding: 3rem .5rem;
+    position: relative;
+    width: 100%;
+}
+
+.actions {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 1rem;
+    margin-bottom: 2rem;
+}
+
+.actions a {
+    padding-left: .4rem;
+}
+
+.backToPokedex {
+    text-decoration: none;
+    color: #fff;
+    transform: scale(2, 0.8);
+}
+
+.backToPokedex:hover{
+    transition: transform .5s;
+    transform: scale(2);
+}
+
+.likeBtn {
+    background-color: transparent;
+    color: #fff;
+    border: none;
+    transform: scale(2.1, 2);
+    z-index: 1;
+    position: absolute;
+    right: 1.7rem;
+}
+
+.likeBtnClicked {
+    background-color: transparent;
+    color: red;
+    border: none;
+    transform: scale(1.8);
+    z-index: 2;
+    position: absolute;
+    right: 1.55rem;
+}
+
+.likeBtnClicked:hover {
+    cursor: pointer;
+}
+
+#detailsSection1 {
+    width: inherit;
+    height: inherit;
+}
+
+.bkgColor {
+    border-radius: 2rem;
+    width: inherit;
+    height: 70vh;
+    z-index: -2;
+    position: absolute;
+    top: 0;
+}
+
+.identification {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 1rem;
+}
+
+.identification .name {
+    color: #fff;
+    font-size: 2rem;
+    text-transform: capitalize;
+}
+
+.identification .number {
+    font-weight: bold;
+    color: #fff;
+    padding-top: 1.6rem;
+}
+
+.types {
+    display: flex;
+    gap: 1rem;
+    padding-left: .8rem;
+}
+
+.types .type {
+    list-style: none;
+    color: #fff;
+    padding: .25rem 1.2rem;
+    margin: .25rem 0;
+    font-size: 1rem;
+    font-weight: 300;
+    border-radius: 1rem;
+    filter: brightness(1.1);
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.pokeImg {
+    display: flex;
+    justify-content: center;
+    padding-top: 1rem;
+}
+
+.pokeImg img {
+    max-width: 90%;
+    max-height: 35vh;
+    padding-left: 2rem;
+    z-index: 2;
+}
+
+.cardContent2 {
+    background-color: #fff;
+    border-radius: 2rem;
+    padding: 3rem .5rem;
+    position: relative;
+    left: 8px;
+    top: -4.5rem;
+    z-index: 1;
+    width: 100vw;
+    min-height: 400px;
+}
+
+.pokeDetails {
+    margin: 0;
+    padding: 2rem .7rem 0 .7rem;
+    background-color: #fff;
+}
+
+.navBar {
+    display: flex;
+    justify-content: space-around;
+}
+
+.buttonDetails {
+    border: none;
+    background-color: transparent;
+    color: #00000050;
+}
+
+.buttonDetails:hover {
+    cursor: pointer;
+}
+
+.cardDetail {
+    margin-top: 1.5rem;
+    margin-bottom: 0;
+    display: flex;
+    gap: 4rem;
+}
+
+.cardDetail__index {
+    color: #00000050;
+}
+
+.cardDetail__bar {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1.15rem;
+    gap: 1.15rem;
+}
+
+.cardDetail__bar meter {
+    width: 14rem;
+    max-width: 50%;
+    height: 1rem;
+}
+
+.meterRed::-webkit-meter-optimum-value {
+    background-color: rgb(255, 0, 0);
+}
+
+.meterYellow::-webkit-meter-optimum-value {
+    background-color: rgb(226, 226, 8);
+}
+
+.meterGreen::-webkit-meter-optimum-value {
+    background: rgb(28, 235, 73);
+}
+
+.abilities {
+    display: flex;
+    align-items: center;
+    margin-top: -16px;
+    gap: 5px;
+}
+
+.abilities p {
+    text-transform: capitalize;
+}
+
+@media screen and (min-width: 480px) {
+    .cardContent {
+        max-width: 480px;
+        max-height: 940px;
+        margin: auto;
+    }
+    .cardContent2 {
+        max-width: 480px;
+        max-height: 940px;
+        margin: auto;
+    }
+    .cardDetail__bar meter {
+        width: 14rem;
+        max-width: none;
+        height: 1rem;
+    }
+}
